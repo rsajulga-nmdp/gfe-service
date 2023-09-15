@@ -63,3 +63,16 @@ GFE Service 2.0
 10. Use `python app.py` to run the Flask service app in debug mode. Service will be available at http://localhost:8080/
 11. Use `make docker-build` to build a docker image using the current `Dockerfile`.
 12. `make docker` will build and run the docker image with the service.  Service will be available at http://localhost:8080/
+
+## Webapp
+
+To interact with the service, we leverage `streamlit`. Running this app might require a specific Python version. You can use [Anaconda](https://www.anaconda.com/products/distribution) to set up a version-specific virtual environemnt:
+```
+conda create -n "venv8" python=3.8
+conda activate venv8
+```
+
+Run the webapp locally as follows:
+```
+streamlit run webapp.py
+```
